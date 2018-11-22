@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+	height: 100vh;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 2rem;
+	color: #3c4955;
+	min-height: 100%;
+    background-color: #bac5db;
+}
+
+.newsletter{
+    margin: 0 auto;
+    width: 670px;
+    height: 390px;
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 25px;
+	background-color: #353a45;
+	box-shadow: 0 25px 25px rgba(0,0,0,0.1);
+	&__title{
+		text-transform: capitalize;
+		color: #538fff;
+		text-align: center;
+		font-size: 4.8rem;
+		font-weight: 700;
+		margin-top: 90px;
+	}
+	&__subtitle{
+		color: #fff;
+		text-align: center;
+		font-size: 2.2rem;	
+	}
+	&__footer{
+		color: #787d87;
+		text-align: center;
+		font-size: 2rem;
+		font-style: italic;
+	}
+}
+
+.form{
+	margin: 30px 60px;
+	&__input-row{
+			display: flex;
+			justify-content: space-between;
+		}
+	&__email,
+	&__btn{
+		font-size: 2rem;
+		padding: 15px;
+		border-radius: 10px;
+		border: transparent;
+		outline: none;
+	}
+	&__email{
+		width: 60%;
+		&:placeholder-shown{
+			color: #e4e4e4;
+		}
+	}
+	&__btn{
+		width: 35%;
+		background-color: #538fff;
+		color: #fff;
+		text-transform: uppercase;
+		// font-weight: 700;
+		font-size: 1.8rem;
+		letter-spacing: 2px;
+	}
+}
+.close{
+	// display: inline-block;
+	border-radius: 50%;
+	border: 3px solid #4d5975;
+	width: 35px;
+	height: 35px;
+	background-image: url('../img/cross.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 50%;
+	position: absolute;
+	right: 12px;
+	top: 12px;
+	& a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.logo{
+	display: block;
+	width: 90px;
+	height: 90px;
+	padding: 5px;
+	border-radius: 50%;
+	background: linear-gradient(60deg, rgba(82,162,244,1) 0%, rgba(142,118,193,1) 90%);
+	position: absolute;
+	left: calc(50% - 45px);
+	top: -45px;
+	// transform: translate(-50% -75%);
+	&__img{
+		width: 100%;
+		height: 100%;
+		border: 2px solid #fff;
+		border-radius: 50%;
+		background-image: url('../img/letter.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto 40%;
+		& a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+	}
+
+}

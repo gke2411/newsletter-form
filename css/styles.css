@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  height: 100vh; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  color: #3c4955;
+  min-height: 100%;
+  background-color: #bac5db; }
+
+.newsletter {
+  margin: 0 auto;
+  width: 670px;
+  height: 390px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 25px;
+  background-color: #353a45;
+  -webkit-box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.1); }
+  .newsletter__title {
+    text-transform: capitalize;
+    color: #538fff;
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 700;
+    margin-top: 90px; }
+  .newsletter__subtitle {
+    color: #fff;
+    text-align: center;
+    font-size: 2.2rem; }
+  .newsletter__footer {
+    color: #787d87;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic; }
+
+.form {
+  margin: 30px 60px; }
+  .form__input-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .form__email, .form__btn {
+    font-size: 2rem;
+    padding: 15px;
+    border-radius: 10px;
+    border: transparent;
+    outline: none; }
+  .form__email {
+    width: 60%; }
+    .form__email:placeholder-shown {
+      color: #e4e4e4; }
+  .form__btn {
+    width: 35%;
+    background-color: #538fff;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    letter-spacing: 2px; }
+
+.close {
+  border-radius: 50%;
+  border: 3px solid #4d5975;
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/cross.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 50%;
+  position: absolute;
+  right: 12px;
+  top: 12px; }
+  .close a {
+    display: block;
+    width: 100%;
+    height: 100%; }
+
+.logo {
+  display: block;
+  width: 90px;
+  height: 90px;
+  padding: 5px;
+  border-radius: 50%;
+  background: -o-linear-gradient(30deg, #52a2f4 0%, #8e76c1 90%);
+  background: linear-gradient(60deg, #52a2f4 0%, #8e76c1 90%);
+  position: absolute;
+  left: calc(50% - 45px);
+  top: -45px; }
+  .logo__img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-image: url("../img/letter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 40%; }
+    .logo__img a {
+      display: block;
+      width: 100%;
+      height: 100%; }
